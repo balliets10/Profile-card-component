@@ -1,0 +1,140 @@
+.attribution {
+     font-size: 11px; text-align: center; 
+    }
+    
+.attribution a {
+     color: hsl(228, 45%, 44%); 
+    }
+
+body {
+    background-color: hsl(185, 75%, 39%);
+    font-family: 'Kumbh Sans', sans-serif;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    max-width: 320px; 
+    background-color: white;
+    height: 400px;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    
+    display: grid;
+    
+}
+
+.user-sec-img {
+    display: flex;
+    justify-content: center;
+    margin-bottom: -30%;
+    border-bottom: 1px solid lightgray;
+}
+
+.user-pic {
+    transform: translate(0%, -80%) scale(.75);
+    border-radius: 50%;
+    border-color: white;
+    border-width: thick;
+    border-style: solid;
+   
+    
+
+}
+
+.cover-pic {
+    max-width: 100%;
+}
+
+.name {
+    display: grid;
+    justify-content: center;
+}
+
+h1 {
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+p.location {
+    justify-self: center;
+    margin-top: 0;
+    margin-bottom: ;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-around;
+}
+
+div.followers {
+    display: grid;
+    justify-content: center;
+}
+
+h2.followers {
+    margin-bottom: -10%;
+}
+
+span.followers {
+
+}
+
+span.followers {
+
+}
+
+div.likes {
+    display: grid;
+    justify-content: center;
+}
+
+h2.likes {
+    margin-bottom: -10%;
+}
+
+span.likes {
+
+}
+
+div.photos {
+    display: grid;
+    justify-content: center;
+}
+
+h2.photos {
+    margin-bottom: -10%;
+}
+
+span.photos {
+
+}
+
+/* Typography */
+
+h2 {
+    font-size: 1.1rem;
+}
+
+p {
+    font-size: .9rem;
+    font-weight: 100;
+
+}
+
+span {
+    font-size: .8rem;
+    font-weight: 100;
+}
+
+span.age {
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
