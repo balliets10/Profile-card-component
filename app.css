@@ -9,12 +9,16 @@
 body {
     background-color: hsl(185, 75%, 39%);
     font-family: 'Kumbh Sans', sans-serif;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100vw;
     height: 100vh;
+    
 }
+
+
 
 main {
     max-width: 320px; 
@@ -24,8 +28,8 @@ main {
     overflow: hidden;
     margin-left: auto;
     margin-right: auto;
-    
     display: grid;
+    z-index: 2;
     
 }
 
@@ -54,6 +58,8 @@ main {
 .name {
     display: grid;
     justify-content: center;
+    position: relative;
+    transform: translate(0%, -30%)
 }
 
 h1 {
@@ -64,7 +70,7 @@ h1 {
 p.location {
     justify-self: center;
     margin-top: 0;
-    margin-bottom: ;
+    color: grey;
 }
 
 .info {
@@ -87,7 +93,7 @@ span.followers {
 }
 
 span.followers {
-
+    margin-left: -10px;
 }
 
 div.likes {
@@ -100,7 +106,7 @@ h2.likes {
 }
 
 span.likes {
-
+    margin-left: 5px;
 }
 
 div.photos {
@@ -131,10 +137,51 @@ p {
 span {
     font-size: .8rem;
     font-weight: 100;
+    color: grey;
 }
 
 span.age {
     font-size: 1.5rem;
     font-weight: 100;
+    color: grey;
 }
 
+.bg-pattern-top {
+  position: fixed;
+  top: 0 auto;
+  left: 0 auto;
+  transform: translate(-47%, -40%);
+  z-index: 1;
+}
+
+.bg-pattern-bottom {
+  position: fixed;
+  bottom: 0 auto;
+  right: 0 auto;
+  transform: translate(47%, 30%);
+  z-index: 1;
+}
+
+footer {
+    align-self:;
+    visibility: hidden;
+}
+
+@media (min-width: 1100px) {
+
+.bg-pattern-top {
+  position: fixed;
+  top: 0 auto;
+  left: 0 auto;
+  transform: translate(-56%, -40%);
+  z-index: 1;
+}
+
+.bg-pattern-bottom {
+  position: fixed;
+  bottom: 0 auto;
+  right: 0 auto;
+  transform: translate(45%, 49%);
+  z-index: 1;
+}
+}
